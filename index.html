@@ -4,16 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
-</head>
-<body>
-    <header>
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+       
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <!-- Font-awsome -->
+    <script src="https://kit.fontawesome.com/c895a97058.js" crossorigin="anonymous"></script>
 
+    <!-- Style -->
+     <style>
+        .sora-font {
+            font-family: "Sora", serif; 
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .dark{
+            color: #111111;
+        }
+     </style>
+</head>
+<body class="sora-font">
+    <header class="">
+        <!-- Navbar -->
+         <section class=" border-b border-green-600 pb-6 sm:border-b-0">
+          <div class="flex justify-between items-center w-7/8 mx-auto mt-6">
+              <!-- 1st -->
+            <div>
+                <div class="inline sm:hidden">
+                    <img src="./assets/logo2.png" alt="">
+                </div>
+                <div class="hidden sm:inline">
+                    <img src="./assets/logo-header.png" alt="">
+                </div>
+            </div>
+            <!-- 2nd -->
+            <div class="ml-32 hidden sm:inline">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a class="dark text-lg">Product</a></li>
+                  <li><a class="dark text-lg">Services</a></li>
+                  <li><a class="dark text-lg">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- 3rd -->
+            <div class="hidden sm:inline">
+                <i class="text-xl text-gray-600 dark fa-solid fa-magnifying-glass"></i>
+                <i class="ml-5 dark text-gray-600 text-xl fa-solid fa-cart-shopping "></i> 
+                <a class="ml-5 font-light dark text-lg px-7 btn border border-green-400">Login</a>
+                <a class="ml-5 font-light text-lg px-7 btn bg-green-600 text-white">Register</a>
+            </div>
+            <div class="block sm:hidden">
+                <i class="fa-solid fa-bars text-2xl text-green-600"></i>
+            </div>
+          </div>
+         </section>
+         <!-- Banner -->
+          
     </header>
     <main>
-
+ 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
