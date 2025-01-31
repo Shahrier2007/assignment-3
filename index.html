@@ -14,7 +14,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
        
     <!-- Tailwind -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
     
     <!-- Font-awsome -->
     <script src="https://kit.fontawesome.com/c895a97058.js" crossorigin="anonymous"></script>
@@ -35,10 +46,10 @@
      </style>
 </head>
 <body class="sora-font">
-    <header class="">
+    <header class="bg-gradient-to-r from-white to-[#f3ece0]">
         <!-- Navbar -->
          <section class=" border-b border-green-600 pb-6 sm:border-b-0">
-          <div class="flex justify-between items-center w-7/8 mx-auto mt-6">
+          <div class="flex justify-between items-center w-11/12 lg:w-10/12 mx-auto mt-6">
               <!-- 1st -->
             <div>
                 <div class="inline sm:hidden">
@@ -69,10 +80,20 @@
           </div>
          </section>
          <!-- Banner -->
-          
+          <section class="w-11/12 lg:w-10/12 mx-auto lg:mt-20 mt-10 lg:space-y-9 space-y-4 flex flex-col items-center">
+            <h2 class="lg:text-5xl text-4xl font-semibold text-center dark">
+                Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!
+            </h2>
+            <p class="lg:text-xl text-center dark max-w-[800px]">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+            </p>
+            <div class="lg:max-w-[1030px]">
+                <img class="w-full" src="./assets/hero-vegetables.png" alt="">
+            </div>
+          </section>
     </header>
     <main>
- 
+        
     </main>
     <footer>
 
